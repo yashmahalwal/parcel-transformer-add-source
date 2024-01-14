@@ -1,0 +1,24 @@
+{
+  "name": "@yashmahalwal/parcel-transformer-add-source-code",
+  "version": "1.0.0",
+  "description": "Parcel plugin to add source code to assets",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "parcel": "2.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@parcel/diagnostic": "^2.10.3",
+    "@parcel/plugin": "^2.10.3"
+  }
+}
