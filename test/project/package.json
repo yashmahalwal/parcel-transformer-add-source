@@ -1,0 +1,14 @@
+{
+  "name": "@yashmahalwal/parcel-transformer-add-source-code-test-project",
+  "version": "1.0.0",
+  "description": "Project fixture for testing @yashmahalwal/parcel-transformer-add-source-code",
+  "devDependencies": {
+    "@parcel/reporter-cli": "^2.11.0",
+    "parcel": "^2.0.0",
+    "@yashmahalwal/parcel-transformer-add-source-code": "file:.yalc/@yashmahalwal/parcel-transformer-add-source-code"
+  },
+  "scripts": {
+    "build": "npx parcel build index.html --log-level=verbose"
+  },
+  "private": true
+}

@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@yashmahalwal/parcel-transformer-add-source-code": {
+      "signature": "7f04f2555446f9a61a6b960080b71a93",
+      "file": true
+    }
+  }
+}

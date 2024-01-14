@@ -4,7 +4,7 @@
   "description": "Parcel plugin to add source code to assets",
   "main": "build/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -15,7 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "yalc": "^1.0.0-pre.53"
   },
   "dependencies": {
     "@parcel/diagnostic": "^2.10.3",
