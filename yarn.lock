@@ -340,6 +340,21 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
+bats-assert@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bats-assert/-/bats-assert-2.0.0.tgz#ba1b4eeee2c7848f1a25948b623790dd41a2b94b"
+  integrity sha512-qO3kNilWxW8iCONu9NDUfvsCiC6JzL6DPOc/DGq9z3bZ9/A7wURJ+FnFMxGbofOmWbCoy7pVhofn0o47A95qkQ==
+
+bats-support@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/bats-support/-/bats-support-0.3.0.tgz#a1f6b8878d2a51837911fdffa0750036f60701ef"
+  integrity sha512-z+2WzXbI4OZgLnynydqH8GpI3+DcOtepO66PlK47SfEzTkiuV9hxn9eIQX+uLVFbt2Oqoc7Ky3TJ/N83lqD+cg==
+
+bats@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/bats/-/bats-1.10.0.tgz#d22cb6e2d88fd39302167da237d710406d1587ce"
+  integrity sha512-yOQrC7npuCrN+Ic3TyjTjJlzHa0qlK3oEO6VAYPWwFeutx/GmpljIyB6uNSl/UTASyc2w4FgVuA/QMMf9OdsCw==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"

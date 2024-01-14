@@ -3,7 +3,7 @@ import ThrowableDiagnostic from "@parcel/diagnostic";
 import { Config } from "./config/types";
 import { base64Encode } from "./base64-encode";
 
-const configFileName = `transform-add-source.config.js`;
+const configFileName = `transformer-add-source.config.js`;
 
 export default new Transformer<Config>({
   async loadConfig({ config, logger }) {
@@ -73,7 +73,7 @@ export default new Transformer<Config>({
   },
   async transform({ asset, config, logger }) {
     // Retrieve the asset's source code and source map.
-    logger.verbose({ message: `Reading source code` });
+    logger.verbose({ message: `Reading source code: ${asset.filePath}` });
     const source = await asset.getCode();
 
     logger.verbose({ message: `Encoding source code` });

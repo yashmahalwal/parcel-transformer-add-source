@@ -8,7 +8,9 @@
     "@yashmahalwal/parcel-transformer-add-source-code": "file:.yalc/@yashmahalwal/parcel-transformer-add-source-code"
   },
   "scripts": {
-    "build": "npx parcel build index.html --log-level=verbose"
+    "build": "parcel build index.html --dist-dir build",
+    "clean": "rm -rf .parcel-cache build transformer-add-source.config.js",
+    "print-contents": "cat build/index*.js"
   },
   "private": true
 }

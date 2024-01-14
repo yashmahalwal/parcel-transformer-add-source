@@ -5,16 +5,23 @@
   "main": "build/index.js",
   "scripts": {
     "build": "rm -rf build && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bats test",
+    "clean-test": "npm --workspace=test/project run clean"
   },
   "engines": {
     "parcel": "2.x"
   },
-  "keywords": [],
-  "author": "",
+  "workspaces": [
+    "test/project"
+  ],
+  "keywords": ["parcel", "transformer", "source-code"],
+  "author": "Yash Mahalwal<yashmahalwal@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.6",
+    "bats": "^1.10.0",
+    "bats-assert": "^2.0.0",
+    "bats-support": "^0.3.0",
     "typescript": "^5.3.3",
     "yalc": "^1.0.0-pre.53"
   },
