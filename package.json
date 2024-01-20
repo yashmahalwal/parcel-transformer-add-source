@@ -4,16 +4,16 @@
   "description": "Parcel plugin to add source code to assets",
   "main": "build/index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rm -rf build && tsc",
+    "pretest": "yalc publish && cd test/project && npm run pretest && npm install",
     "test": "bats test",
-    "clean-test": "npm --workspace=test/project run clean"
+    "posttest": "yalc installations clean @yashmahalwal/parcel-transformer-add-source-code && cd test/project && npm run posttest",
+    "clean-test": "cd test/project && npm run clean"
   },
   "engines": {
     "parcel": "2.x"
   },
-  "workspaces": [
-    "test/project"
-  ],
   "keywords": ["parcel", "transformer", "source-code"],
   "author": "Yash Mahalwal<yashmahalwal@gmail.com>",
   "license": "ISC",
@@ -21,7 +21,6 @@
     "@types/node": "^20.10.6",
     "bats": "^1.10.0",
     "bats-assert": "^2.0.0",
-    "bats-support": "^0.3.0",
     "typescript": "^5.3.3",
     "yalc": "^1.0.0-pre.53"
   },

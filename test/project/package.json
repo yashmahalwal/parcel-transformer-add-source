@@ -4,13 +4,15 @@
   "description": "Project fixture for testing @yashmahalwal/parcel-transformer-add-source-code",
   "devDependencies": {
     "@parcel/reporter-cli": "^2.11.0",
-    "parcel": "^2.0.0",
-    "@yashmahalwal/parcel-transformer-add-source-code": "file:.yalc/@yashmahalwal/parcel-transformer-add-source-code"
+    "parcel": "^2.0.0"
   },
   "scripts": {
+    "posttest": "yalc remove @yashmahalwal/parcel-transformer-add-source-code",
     "build": "parcel build index.html --dist-dir build",
     "clean": "rm -rf .parcel-cache build transformer-add-source.config.js",
-    "print-contents": "cat build/index*.js"
+    "print-contents": "cat build/index*.js",
+    "pretest": "yalc add @yashmahalwal/parcel-transformer-add-source-code"
   },
-  "private": true
+  "private": true,
+  "dependencies": {}
 }
