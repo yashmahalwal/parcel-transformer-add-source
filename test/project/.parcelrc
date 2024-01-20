@@ -1,7 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "source.js": ["@yashmahalwal/parcel-transformer-add-source-code", "..."]
+    "source.js": ["@yashmahalwal/parcel-transformer-add-source", "..."]
   },
   "reporters": ["@parcel/reporter-cli"]
 }
