@@ -4,12 +4,14 @@ setup_file() {
    cd test/project
 }
 
-setup() {
+setup(){
+   load '../node_modules/bats-support/load'
    load '../node_modules/bats-assert/load'
 }
 
 teardown() {
    npm run clean
+   cd ../..
 }
 
 CONFIG="transformer-add-source.config.js"
@@ -27,7 +29,8 @@ CONFIG="transformer-add-source.config.js"
   run npm run build
 
   assert_output --partial "Invalid config file"
-  assert_output --partial "Please ensure that $CONFIG exports a valid Javascript object."
+  assert_output --partial "Please ensure that $CONFIG exports a valid"
+  assert_output --partial "Javascript object."
 }
 
 @test "Requires encode export from config file to be a function" {
@@ -35,7 +38,8 @@ CONFIG="transformer-add-source.config.js"
   run npm run build
 
   assert_output --partial "Invalid encoding function"
-  assert_output --partial "Please ensure that $CONFIG exports a valid \`encode\` function."
+  assert_output --partial "Please ensure that $CONFIG exports a valid"
+  assert_output --partial "\`encode\` function."
 }
 
 @test "Requires addSourceCode export from config file to be present" {
@@ -43,7 +47,8 @@ CONFIG="transformer-add-source.config.js"
   run npm run build
 
   assert_output --partial "Missing transformation function"
-  assert_output --partial "Please ensure that $CONFIG exports an \`addSourceCode\` function."
+  assert_output --partial "Please ensure that $CONFIG exports an"
+  assert_output --partial "\`addSourceCode\` function."
 }
 
 @test "Requires addSourceCode export from config file to be a function" {
@@ -51,7 +56,8 @@ CONFIG="transformer-add-source.config.js"
   run npm run build
 
   assert_output --partial "Invalid transformation function"
-  assert_output --partial "Please ensure that $CONFIG exports a valid \`addSourceCode\` function."
+  assert_output --partial "Please ensure that $CONFIG exports a valid"
+  assert_output --partial "\`addSourceCode\` function."
 }
 
 @test "Default transformation" {

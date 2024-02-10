@@ -14,13 +14,18 @@
   "engines": {
     "parcel": "2.x"
   },
-  "keywords": ["parcel", "transformer", "source-code"],
+  "keywords": [
+    "parcel",
+    "transformer",
+    "source-code"
+  ],
   "author": "Yash Mahalwal<yashmahalwal@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.6",
     "bats": "^1.10.0",
     "bats-assert": "^2.0.0",
+    "bats-support": "github:ztombol/bats-support#v0.2.0",
     "typescript": "^5.3.3",
     "yalc": "^1.0.0-pre.53"
   },
