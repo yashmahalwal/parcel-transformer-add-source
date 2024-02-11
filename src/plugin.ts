@@ -1,6 +1,6 @@
 import { Transformer } from "@parcel/plugin";
 import ThrowableDiagnostic from "@parcel/diagnostic";
-import { Config } from "./config/types";
+import { Config } from "./types/config";
 import { base64Encode } from "./base64-encode";
 
 const configFileName = `transformer-add-source.config.js`;
